@@ -69,8 +69,10 @@ for i in range(1, len(path) - 1):
   output["dlvr_seq_num"].append(i)
 
 out = pd.DataFrame(output)
-name = data.split("/")[-1]
-name = name.replace("input", "output")
+name = data.split("\\")
+name[-1] = name[-1].replace("input", "output")
+name[0] = "output_datasets"
+name = "\\".join(name)
 out.to_csv(name, index=False)
 
 # Test
