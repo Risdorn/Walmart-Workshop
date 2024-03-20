@@ -1,1 +1,2 @@
-python code/part_a/run.py input_datasets/part_a/part_a_input_dataset_1.csv
+python code/part_a/run.py
+input_datasets/part_a/part_a_input_dataset_1.csv
